@@ -29,6 +29,7 @@ html{
     color: #03a9f4;
 }
 body {
+    margin: 0;
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 400;
     color: #626262;
@@ -36,6 +37,7 @@ body {
     line-height: 24px;
 }
 .site-navigation {
+    font-size: 0;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -45,6 +47,8 @@ body {
     display: inline-block;
 }
 .site-navigation a{
+    font-size: 14px;
+    line-height: 24px;
     display: block;
     padding: 28px 28px;
     color: #626262;
@@ -68,6 +72,7 @@ body {
     margin-right: 0;
 }
 .article-name {
+    margin: 0;
     color: #c7c1b6;
     line-height: 17px;
     text-transform: uppercase;
@@ -75,13 +80,19 @@ body {
     margin-bottom: 32px;
 
 }
+.section-image {
+    margin: 0;
+    margin-bottom: 30px;
+}
 .content-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
 }
 .article-content {
+    margin: 0;
     font-size: 14px;
 }
 .article-title {
+    margin: 0;
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 34px;
@@ -97,6 +108,11 @@ body {
     display: block;
     padding: 22px 35px;
     margin: 0 auto;
-    margin-bottom: 70px;
     background: none;
+}
+.title {
+    margin: 0;
+}
+section{
+    padding-bottom: 70px;
 }
