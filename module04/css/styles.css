@@ -28,13 +28,20 @@ header {
     margin: 0;
     padding: 30px 0px 60px 0px;
 }    
-    
+.logo-title a{
+    display: block;
+    text-decoration: none;
+    color: #555252;
+    font-weight: 400;
+}   
+.logo-title::first-letter{
+    color: #1abc9c;
+}
 .logo-title {
     margin: 0;
     padding: 0;
     float: left;
     text-transform: uppercase;
-
 }
 .site-navigation li {
     float: left;
@@ -42,7 +49,6 @@ header {
 .site-navigation li:not(:last-child){
     margin-right: 30px;
 }
-
 .site-navigation {
     float: right;
     margin: 0;
@@ -52,6 +58,7 @@ header {
     font-size: 12px; 
 }
 .site-navigation a{
+    display: block;
     color: #0f0101;
     font-weight: 700;
     text-transform: uppercase;
@@ -64,11 +71,11 @@ header {
 }
 
 /*Featured section*/
-
 .featured-section {
     margin-bottom: 100px;
 }
 .featured-list-image{
+    display: block;
     margin: 0;
     padding: 0;
 }
@@ -97,10 +104,6 @@ header {
     background: #323232;
     text-transform: uppercase;
 }
-.featured-list-name p:hover, 
-.featured-list-name p:focus {
-    background-color: #1abc9c;
-}
 .featured-list-price {
     text-transform: uppercase;
     width: 54px;
@@ -115,20 +118,16 @@ header {
 .featured-list-name {
     float: left;
 }
-.featured-list-name:hover,
-.featured-list-name:focus {
-    background: #1abc9c;
-
+.featured-list-item:hover .featured-list-name {
+    background-color: #1abc9c;
+}
+.featured-list-item:hover .featured-list-price {
+    background-color: #7fd9c7;
 }
 
 .featured-list-price { 
     float: right;
 }
-.featured-list-price:hover,
-.featured-list-price:focus {
-    background: #7fd9c7;
-}
-
 /*New latest section*/
 .latest-list {
     margin: 0;
@@ -190,17 +189,22 @@ h2 {
 .featured-title {
     margin-bottom: 130px;
 }
-/*latest-button*/
+
+/*latest-more*/
 .latest-news {
     padding-bottom: 45px;
 }
-.latest-button {
-    border: none;
+.latest-list-more:hover,
+.latest-list-more:focus {
+    color: #2622c9;
+}
+.latest-list-more {
+    border-radius: 4px; 
     margin: 0;
-    padding: 14px 42px;
-    background-color: #1abc9c;
-    font-size: 16px;
-    line-height: 26px;
+    padding: 16px 38px 18px 38px;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    background: #4ec6ab;
     color: #ffffff;
-    cursor: pointer;
 }
