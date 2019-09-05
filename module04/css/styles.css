@@ -147,6 +147,7 @@ header {
     padding: 0;
     font-size: 18px;
     line-height: 26px;
+    margin-bottom: 40px;
 }
 .latest-list-title::after { 
     display: block;
@@ -154,7 +155,6 @@ header {
     height: 4px;
     background-color: #1abc9c;
     content: '';
-    margin-bottom: 40px;
 }
 .latest-list-abuot {
     margin: 0;
