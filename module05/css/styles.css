@@ -1,0 +1,320 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #555252;
+}
+/*LOGO*/
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.logo-title a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #605e5e;
+}
+.logo-title::first-letter{
+    color: #1abc9c;
+}
+.logo-title {
+    float: left;
+}
+header {
+    margin: 0;
+    padding: 40px 0px;
+}
+/*SITE NAVIGATION*/
+.site-navigation {
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    list-style: none;
+    padding-top: 10px;
+}
+.site-navigation a{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0101;
+}
+.site-navigation li{
+    float: left;
+}
+.site-navigation li:not(:last-child){
+    margin-right: 30px;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color:#1abc9c;
+}
+/*SLIDER SECTION*/
+.main-slider {
+    height: 600px;
+    background-image: url(../img/slide/slide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-list {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+.slider-title {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.slider-text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+.slider {
+    position: relative;
+    height: 600px;
+}
+.slider-ctrl {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #549e8b;
+    border: none;
+    top:50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-ctrl-prew {
+    background-image: url(../img/icon/arrow\ slider\ prev.png);
+    left: 0;
+}
+.slider-ctrl-next {
+    background-image: url(../img/icon/arrow\ slider\ next.png);
+    right: 0;
+}
+.slider-info {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    width: 1170px;
+}
+.slider-list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+}
+/*NEW COLLECTION SECTION*/
+.team-title {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.team-title {
+    padding-bottom: 140px;
+}
+.team-title:after{
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 160px;
+    height: 6px;
+    background: #1abc9c;
+    margin-top: 20px;
+}
+.main-collection {
+    background-color: #e9f0fd;
+}
+.team-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.team-name {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #323232;
+    text-transform: uppercase;
+    color:#ffffff;
+    width: 201px;
+    font-size: 18px;
+    line-height: 32px;
+}
+.team-price {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #8c8c8c;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-align: center;
+    float: right;
+    width: 54px;
+    font-size: 18px;
+    line-height: 32px;
+}
+.team-image {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.team-item {
+    width: 255px;
+    list-style: none;
+    float: left;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-item:hover .team-name{
+    background-color: #1abc9c;
+}
+.team-item:hover .team-price{
+    background-color: #7fd9c7;
+}
+.team-list {
+    padding-bottom:100px;
+}
+.main-collection {
+    padding-top: 100px;
+}
+/*FOOTER*/
+.manu-footer {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0px;
+    font-size: 16px;
+    line-height: 28px;
+    background-color: #323232;
+    color:#ffffff;
+}
+.manu-footer p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.manu-text-color {
+    margin: 0;
+    padding: 0;
+    color: #3d7d71;
+}
+
+/*OVERLAY*/
+.team-item {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 322px;
+    background-color: rgba(115, 115, 115, 0.6);
+    border: 10px solid rgba(255, 255, 255, .6);
+    background-clip: content-box;
+    opacity: 0;
+}
+.team-item:hover .overlay {
+    opacity: 1;
+}
+.team-item:hover .icon {
+    border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.buttons__wrapper {
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.icon {
+    background: none;
+    border: solid 1px rgba(255, 255, 255, 0);
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+.team-item:hover .heart {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icon/heart.png);
+}
+.team-item:hover .arrow {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icon/arrow.png);
+}
+.team-item:hover .clock {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icon/clock.png);
+}
+.team-item:hover .basket {
+    color: #ffffff;
+    background: #323232;
+    width: 160px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-image: url(../img/icon/basket.png);
+}
+.heart:hover {
+    background-color: #1abc9c;
+}
+.arrow:hover {
+    background-color: #1abc9c;
+}
+.clock:hover {
+    background-color: #1abc9c;
+}
