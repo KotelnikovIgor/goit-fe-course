@@ -46,7 +46,6 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-    /* background: rgb(98, 144, 158); */
 }
 .nav__items { 
     justify-content: space-between;
