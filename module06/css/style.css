@@ -1,0 +1,309 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+/* HEADER */
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    background: rgb(98, 144, 158);
+}
+.nav__items { 
+    justify-content: space-between;
+    display: flex;
+    width: 490px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} 
+.nav__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.nav__link {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #95e1d3;
+    position: relative;
+}
+.nav__link:hover {
+    color: rgba(243, 129, 129, 1)
+}
+.nav__link:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background: rgba(243, 129, 129, 1);
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+}
+.nav__link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+/* Title */
+.sudtitle {
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-family:'Kaushan Script', cursive;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #333333;
+}
+.title__section {
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+}
+.title__section::after {
+    display: block;
+    content: '';
+    margin: 40px auto;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+}
+
+/* Service Section */
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.service__item {
+    /* flex-basis: 380px;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    /* Можна задать */
+    flex: 0 0 380px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.service__item:nth-child(-n + 3) {
+    margin-bottom: 100px;
+}
+.service__item {
+    background-repeat: no-repeat;
+    padding-left: 60px;
+}
+.alar__icon {
+    background-image: url(../img/icon/ALARM.png);
+}
+.line__icon {
+    background-image: url(../img/icon/LINE\ GRAPH.png);
+}
+.compute__icon {
+    background-image: url(../img/icon/COMPUTER\ .png);
+}
+.book__icon {
+    background-image: url(../img/icon/BOOK\ 2.png);
+}
+.home__icon {
+    background-image: url(../img/icon/HOME.png);
+}
+.image__icon {
+    background-image: url(../img/icon/IMAGE.png);
+}
+.service__name {
+    text-align: left;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(51, 51, 51);
+    margin: 0;
+    padding-bottom: 20px;
+}
+.service__about {
+    text-align: left;
+    margin: 0;
+}
+/* Team Section */
+.team__image {
+    padding-bottom: 30px;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 90px;
+}
+.team__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    padding-bottom: 84px;
+}
+.team__title {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    padding-bottom: 14px;
+}
+.team__item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    text-align: center;
+}
+.team__about {
+    margin: 0;
+    padding: 0;
+}
+/* Social Item */
+.socials__position {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(rgba(239, 138, 139, 0.5), rgba(240, 215, 134, 0.5));
+    opacity: 0;
+}
+.team__item:hover .socials__position {
+    box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+    opacity: 1;
+}
+.socials__position__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team__socials__item {
+    background: #fce38a;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+}
+.team__socials__item:not(:last-child){
+    margin-right: 1px;
+}
+.team__socials__item:hover {
+    background-color: #95e1d3;
+}
+
+.icon__facebook {
+    background-image: url(../img/socials/facebook.png);
+}
+.icon__twitter {
+    background-image: url(../img/socials/twitter.png);
+}
+.icon__pinterest {
+    background-image: url(../img/socials/pinterest.png);
+}
+.icon__instagram {
+    background-image: url(../img/socials/instagram.png);
+}
+/* Fooret Section */
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid  #b3b3b3;
+}
+.form__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+}
+
+.footer__input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+
+}
+.footer__button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    /* padding: 14px 33px; */
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+}
+.footer__text__span {
+    color: #f6a1a1;
+}
+
+
+
+
+
+
+
+
+
