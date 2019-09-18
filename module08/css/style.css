@@ -59,6 +59,7 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
+    padding-bottom: 140px;
 }
 .nav {
     padding: 10px 10px;
@@ -70,7 +71,9 @@ body {
     background: none;
     outline: 0;
     padding: 5px 5px;
-    margin: 34px 0;
+}
+.flex__botton--item {
+    margin-bottom: 20px;
 }
 .button__name {
     margin: 0;
@@ -91,7 +94,6 @@ body {
     background: #ff4e50;
     outline: 0;
     padding: 12px 20px;
-    margin-bottom: 140px;
 }
 .holiday__button--name {
     margin: 0;
@@ -107,7 +109,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
-    margin-bottom: 38px;
+    
 }
 .titile__holiday {
     margin: 0;
@@ -129,6 +131,9 @@ body {
     text-align: center;
     margin-bottom: 18px;
 } 
+.flex__items--one {
+    margin-bottom: 38px;
+}
 /* Partner Sectoin */
 .partner__list {
     display: flex;
@@ -154,6 +159,7 @@ body {
 .partner__item {
     list-style: none;
     text-align: center;
+    margin-bottom: 30px;
 }
 .partner__text{
     margin: 0;
@@ -162,7 +168,6 @@ body {
     font-size: 14px;
     line-height: 17px;
     color:#666666;
-    margin-bottom: 30px;
     padding: 0px 25px;
 }
 .section-partner {
@@ -223,6 +228,7 @@ body {
     }
     .header {
         background-image: linear-gradient(rgba(26, 25, 21,.2),rgba(26, 25, 21,.2)), url(../img/headerimg/header@0\,75x.jpg);
+        padding-bottom: 235px;
     }
     .titile__holiday {
         /* width: 492px; */
@@ -242,7 +248,7 @@ body {
     }
     .flex__items--two {
         text-align: center;
-        margin-bottom: 235px;
+        /* margin-bottom: 235px; */
     }
     .flex__items--one {
         display: flex;
@@ -301,7 +307,6 @@ body {
     }
     .header {
         background-image: linear-gradient(rgba(26, 25, 21,.5),rgba(26, 25, 21,.5)), url(../img/headerimg/header@1x.jpg);
-
     }
     .titile__holiday {
         padding: 0 200px;
