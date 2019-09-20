@@ -183,6 +183,7 @@ body {
     outline: 0;
     padding: 11px 70px;
     color: #ff4e50;
+    margin: 0 auto;
 }
 .button__items {
     padding: 0;
