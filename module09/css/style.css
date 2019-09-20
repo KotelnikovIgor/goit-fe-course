@@ -184,6 +184,9 @@ body {
     padding: 11px 70px;
     color: #ff4e50;
 }
+.button__items {
+    padding: 0;
+}
 .icon {
     position: relative;
     display: block;
@@ -257,6 +260,9 @@ body {
         padding: 0;
         margin: 0;
     }
+    .button__partner {
+        padding: 11px 40px;
+    }
     
 }
 @media (min-width: 959px) {
@@ -288,7 +294,9 @@ body {
     .titile__holiday {
         margin-bottom: 25px;
     }
-    
+    .button__partner {
+        padding: 10px 20px;
+    }
 
 
 }
