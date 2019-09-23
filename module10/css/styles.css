@@ -141,8 +141,8 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 175px;
-    padding-top: 30px;
+    padding: 30px 0;
+    margin-bottom: 110px;
 }
 .nav__link::after {
     display: block;
@@ -200,13 +200,15 @@ header {
 /* 
 Section Amazing Services 
 */
+.services {
+    padding-top: 50px;
+}
 .section__subtitile {
     font-family: 'Kaushan Script', sans-serif;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 20px;
     text-align: center;
-    padding-top: 50px;
 }
 .section__titile {
     font-family: 'Montserrat', sans-serif;
@@ -270,10 +272,14 @@ Section Amazing Services
 /* 
 Meet our team
 */
+.team {
+    padding-top: 50px;
+    padding-bottom: 84px;
+}
 .team__text {
     text-align: center;
     padding: 0 120px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 }
 .team__items {
     display: -webkit-box;
@@ -284,7 +290,6 @@ Meet our team
             justify-content: space-between;
     list-style: none;
     text-align: center;
-    padding-bottom: 84px;
 }
 .team__image {
     margin-bottom: 30px;
@@ -333,9 +338,10 @@ Team Socials Item
 }
 
 .team__socials__item {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     background: #fce38a;
+    border: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -345,12 +351,13 @@ Team Socials Item
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 1px;        
     
 }
 .team__socials__item svg{
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     fill: #f38181;
 }
 .team__item:hover .socials__position {
