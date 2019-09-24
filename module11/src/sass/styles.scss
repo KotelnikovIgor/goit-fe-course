@@ -1,0 +1,16 @@
+/*
+   Import partials below
+*/
+@import './typography';
+@import './variables';
+@import './normalize';
+@import './basic';
+@import './placeholder';
+
+// Components
+@import './components/wrapper';
+@import './components/header';
+@import './components/service_section';
+@import './components/team_section';
+@import './components/socials__position';
+@import './components/footer_section';

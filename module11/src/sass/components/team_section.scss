@@ -1,0 +1,40 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 84px;
+}
+
+.team__text{
+  text-align: center;
+  padding: 0 120px;
+  margin-bottom: 90px;
+}
+
+.team__position {
+  font-style: italic;
+  text-align: center;
+}
+
+.team__image {
+  margin-bottom: 30px;
+}
+
+.team__name {
+  font-family: $font-Montserrat;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+
+.team__items {
+  position: relative;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}

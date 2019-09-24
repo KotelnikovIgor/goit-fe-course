@@ -1,0 +1,76 @@
+.services {
+  padding-top: 50px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+    flex: 0 0 380px;
+    padding-left: 60px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+
+    &:nth-of-type(-n + 3) {
+      margin-bottom: 98px;
+    }
+  }
+
+  &__name {
+    font-family: $font-Montserrat;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    text-align: left;
+  }
+}
+
+.section__subtitile {
+  font-family: $font-Kaushan;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section__titile {
+  font-family: $font-Montserrat;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.alar__icon {
+  background-image: url("../images/icon/icon-alarm.svg");
+}
+
+.line__icon {
+  background-image: url("../images/icon/icon-line.svg");
+}
+
+.compute__icon {
+  background-image: url("../images/icon/icon-computer.svg");
+}
+
+.book__icon {
+  background-image: url("../images/icon/icon-book.svg");
+}
+
+.home__icon {
+  background-image: url("../images/icon/icon-home.svg");
+}
+
+.image__icon {
+  background-image: url("../images/icon/icon-image.svg");
+}
