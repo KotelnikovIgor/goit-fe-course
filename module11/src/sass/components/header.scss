@@ -68,6 +68,11 @@ header {
     list-style: none;
     font-size: 14px;
     line-height: 17px;
+
+    &:hover svg {
+      fill: $yelow-color;
+    }
+
   }
 
   &__link {
@@ -102,6 +107,7 @@ header {
   // background: #000;
   width: 20px;
   height: 15px;
+  fill: #ffffff;
 }
 
 .logo {

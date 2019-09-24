@@ -532,6 +532,10 @@ header {
   line-height: 17px;
 }
 
+.nav__item:hover svg {
+  fill: #fce38a;
+}
+
 .nav__link {
   text-decoration: none;
   color: #ffffff;
@@ -561,6 +565,7 @@ header {
 .svg__header {
   width: 20px;
   height: 15px;
+  fill: #ffffff;
 }
 
 .logo {
